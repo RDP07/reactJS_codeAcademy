@@ -10,7 +10,7 @@ function makeDoggy (e) {
 }
 
 var kitty = (
-	<img 
+	<img onClick={makeDoggy}
 		src="https://s3.amazonaws.com/codecademy-content/courses/React/react_photo-kitty.jpg" 
 		alt="kitty" />
 );
