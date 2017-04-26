@@ -12,10 +12,9 @@ var pics = {
   doggy: 'https://s3.amazonaws.com/codecademy-content/courses/React/react_photo-puppy.jpeg'
 };
 
-if (coinToss() =='heads') {
-	var img = <img src={pics.kitty} />;
-} else {
-	var img = <img src={pics.doggy} />;
-}
+var img = <img src={pics[coinToss() == 'heads' ? 'kitty' : 'doggy']} />;
 
-ReactDOM.render(img, document.getElementById('app'));
+ReactDOM.render(
+  img, 
+  document.getElementById('app')
+  );
