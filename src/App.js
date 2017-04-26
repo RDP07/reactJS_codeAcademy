@@ -3,4 +3,5 @@ var ReactDOM = require('react-dom');
 
 var theBestString = 'tralalalala i am da best';
 
-ReactDOM.render(___, document.getElementById('app'));
+ReactDOM.render(<h1> { theBestString } </h1>, 
+document.getElementById('app'));
