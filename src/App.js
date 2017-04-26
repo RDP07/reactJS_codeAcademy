@@ -1,7 +1,5 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-var theBestString = 'tralalalala i am da best';
+var goose = 'https://s3.amazonaws.com/codecademy-content/courses/React/react_photo-goose.jpg';
 
-ReactDOM.render(<h1> { theBestString } </h1>, 
-document.getElementById('app'));
