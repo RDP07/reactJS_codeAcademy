@@ -15,4 +15,4 @@ var kitty = (
 		alt="kitty" />
 );
 
-ReactDOM.render(null, null);
+ReactDOM.render(kitty, document.getElementById('app'));
