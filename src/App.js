@@ -2,19 +2,22 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 
 
-function coinToss () {
-  // This function will randomly return either 'heads' or 'tails'.
-  return Math.random() < 0.5 ? 'heads' : 'tails';
-}
+// judgmental will be true half the time.
+var judgmental = Math.random() < 0.5;
 
-var pics = {
-  kitty: 'https://s3.amazonaws.com/codecademy-content/courses/React/react_photo-kitty.jpg',
-  doggy: 'https://s3.amazonaws.com/codecademy-content/courses/React/react_photo-puppy.jpeg'
-};
-
-var img = <img src={pics[coinToss() == 'heads' ? 'kitty' : 'doggy']} />;
+var favoriteFoods = (
+  <div>
+    <h1>My Favorite Foods</h1>
+    <ul>
+      <li>Sushi Burrito</li>
+      <li>Rhubarb Pie</li>
+      <li>Nacho Cheez Straight Out The Jar</li>
+      <li>Broiled Grapefruit</li>
+    </ul>
+  </div>
+);
 
 ReactDOM.render(
-  img, 
-  document.getElementById('app')
-  );
+	favoriteFoods, 
+	document.getElementById('app')
+);
