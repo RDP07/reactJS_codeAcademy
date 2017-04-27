@@ -2,22 +2,11 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 
 
-// judgmental will be true half the time.
-var judgmental = Math.random() < 0.5;
+var people = ['Rowe', 'Prevost', 'Gare'];
 
-var favoriteFoods = (
-  <div>
-    <h1>My Favorite Foods</h1>
-    <ul>
-      <li>Sushi Burrito</li>
-      <li>Rhubarb Pie</li>
-      { !judgmental && <li>Nacho Cheez Straight Out The Jar</li> }
-      <li>Broiled Grapefruit</li>
-    </ul>
-  </div>
-);
+var peopleLIs = people.map(function(person){
+  // return statement goes here:
 
-ReactDOM.render(
-	favoriteFoods, 
-	document.getElementById('app')
-);
+});
+
+// ReactDOM.render goes here:
