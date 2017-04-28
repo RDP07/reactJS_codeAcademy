@@ -1,15 +1,13 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-/*var greatestDivEver = <div>i am div</div>;*/
-
-var greatestDivEver = React.createElement(
-"div",
-null,
-'i am div'
-);
+var MyComponentClass= React.createClass({
+	render: function () {
+		return <h1>Hello world</h1>;
+	}
+});
 
 ReactDOM.render(
-	greatestDivEver,
+	<MyComponentClass />,
 	document.getElementById('app')
-	);
+);
