@@ -3,11 +3,11 @@ var ReactDOM = require('react-dom');
 
 
 var MyName = React.createClass({
-	// name property goes here:
+	name: 'Ross',
 
 
   render: function () {
-    return <h1></h1>;
+    return <h1>My name is {this.name}.</h1>;
   }
 });
 
