@@ -15,3 +15,21 @@ var friends = [
     src: "https://s3.amazonaws.com/codecademy-content/courses/React/react_photo-alpaca.jpg"
   }
 ];
+
+var Friend = React.createClass({
+  render: function () {
+  	var friend = friends[1];
+  	return (
+  		<div>
+  		  <h1> { friend.title } </h1>
+  		  <img
+  		    src= { friend.src } />
+  		</div>
+  	  );
+  	}
+});
+
+ReactDOM.render(
+  <Friend />,
+  document.getElementById('app')
+);
