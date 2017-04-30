@@ -1,21 +1,17 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-var fiftyFifty = Math.random() < 0.5;
 
-var TonightsPlan = React.createClass({
+var MyName = React.createClass({
+	// name property goes here:
+
+
   render: function () {
-  	var plan;
-  	if (fiftyFifty) {
-  		plan = "out"
-  	} else {
-  		plan = "to bed"
-  	}
-  	return <h1>Tonight I'm going {plan} WOO </h1>;
+    return <h1></h1>;
   }
 });
 
 ReactDOM.render(
-	<TonightsPlan />,
-	document.getElementById('app')
+  <MyName />, 
+  document.getElementById('app')
 );
