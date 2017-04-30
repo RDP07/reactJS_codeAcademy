@@ -21,7 +21,6 @@ body {
 }
 
 #app div div {
-	position: absolute;
 	height: 100%;
 }
 
@@ -100,9 +99,5 @@ button:active {
 }
 
 img {
-	position: fixed;
-	width: 90%;
-	top: 5%;
-	left: 5%;
-	cursor: pointer;
+	height: 365px;
 }
