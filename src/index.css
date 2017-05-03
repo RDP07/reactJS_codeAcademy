@@ -66,6 +66,7 @@ button {
 	font-size: 16px;
 	font-family: 'Oxygen', sans-serif;
 	letter-spacing: 2px;
+	cursor: pointer;
 }
 
 button:hover {
@@ -96,8 +97,4 @@ button:active {
   font-size: 16px;
   font-family: 'Oxygen', sans-serif;
   letter-spacing: 2px;
-}
-
-img {
-	height: 365px;
 }
