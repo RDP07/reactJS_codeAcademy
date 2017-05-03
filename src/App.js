@@ -7,6 +7,8 @@ var Button = React.createClass({
   },
 
   render: function () {
-    return <button>AAAAAH!</button>;
+    return <button onClick={this.scream}>AAAAAH!</button>;
   }
 });
+
+ReactDOM.render(<Button />, document.getElementByIs('app'));
